@@ -7,12 +7,14 @@
   --black-txt-cl: #212121;
   --white-txt-cl: #ffffff;
   --accent-txt-cl: #2196f3;
+  --icons-cl: #afb1b8;
 
   /*Bg colors*/
   --dark-bg-cl: #2f303a;
   --grey-bg-cl: #f5f4fa;
   --main-bg-btn-cl: #2196f3;
   --bg-btn-cl: #188ce8;
+  --white-bg-cl: #ffffff;
   /*Others*/
 }
 
@@ -75,13 +77,11 @@ img {
   padding-bottom: 94px;
 }
 
-
 .card-set {
   display: flex;
   flex-wrap: wrap;
   gap: 30px;
 }
-
 
 /*header*/
 
@@ -89,15 +89,13 @@ img {
   font-weight: 500;
   line-height: calc(16 / 14);
   letter-spacing: 0.02em;
-  border-bottom: 1px solid #ECECEC;
-
+  border-bottom: 1px solid #ececec;
 }
 
 .header .logo-link {
   padding-top: 24px;
   padding-bottom: 24px;
 }
-
 
 .main-nav {
   display: flex;
@@ -125,7 +123,7 @@ img {
   display: flex;
 }
 
-.nav-list .nav-item+.nav-item {
+.nav-list .nav-item + .nav-item {
   margin-left: 50px;
 }
 
@@ -145,7 +143,8 @@ img {
   color: var(--accent-txt-cl);
 }
 
-.nav-link {}
+.nav-link {
+}
 
 .hover-link:hover,
 .hover-link:focus {
@@ -159,11 +158,12 @@ img {
   margin-left: auto;
 }
 
-.contact-list .contact-item+.contact-item {
+.contact-list .contact-item + .contact-item {
   margin-left: 50px;
 }
 
-.contact-item {}
+.contact-item {
+}
 
 .contact-link {
   color: inherit;
@@ -178,7 +178,6 @@ img {
   max-width: 1600px;
   margin-left: auto;
   margin-right: auto;
-
 }
 
 .hero-title {
@@ -218,7 +217,8 @@ img {
 
 /*Преимущества*/
 
-.advantades {}
+.advantades {
+}
 
 .advantades-item {
   flex-basis: calc((100% - 90px) / 4);
@@ -233,7 +233,8 @@ img {
   margin-bottom: 10px;
 }
 
-.advantades-article {}
+.advantades-article {
+}
 
 /*Чем занимается*/
 
@@ -258,41 +259,45 @@ img {
 
 .work-item {
   flex-basis: calc((100% - 60px) / 3);
-
 }
 
 .work-item {
   width: 370px;
 }
 
-.work-img {}
+.work-img {
+}
 
 /*Наша команда*/
 
 .command {
-  background-color: #F5F4FA;
+  background-color: #f5f4fa;
   max-width: 1600px;
   margin-left: auto;
   margin-right: auto;
 }
 
-.command-list {}
+.command-list {
+}
 
-.command-list-item {}
+.command-list-item {
+}
 
 .command-list-item {
   text-align: center;
 }
 
-.command-img {}
+.command-img {
+}
 
 .command-border {
-
-  box-shadow: 0px 1px 3px rgba(0, 0, 0, 0.12), 0px 1px 1px rgba(0, 0, 0, 0.14), 0px 2px 1px rgba(0, 0, 0, 0.2);
+  box-shadow: 0px 1px 3px rgba(0, 0, 0, 0.12), 0px 1px 1px rgba(0, 0, 0, 0.14),
+    0px 2px 1px rgba(0, 0, 0, 0.2);
   border-radius: 0px 0px 4px 4px;
   border-top: none;
   padding-top: 30px;
   padding-bottom: 30px;
+  background-color: var(--white-bg-cl);
 }
 
 .command-subtitle {
@@ -304,7 +309,7 @@ img {
 .command-item {
   font-size: 16px;
   line-height: calc(19 / 16);
-  padding-bottom: 30px;
+  margin-bottom: 16px;
 }
 
 .command-subtitle {
@@ -315,7 +320,38 @@ img {
   color: var(--black-txt-cl);
 }
 
+.social-list {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 10px;
+  justify-content: center;
+}
+.social-item {
+}
 
+.social-link {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  width: 44px;
+  height: 44px;
+  background-color: var(--white-bg-cl);
+  border-radius: 50%;
+}
+.social-link:hover,
+.social-link:focus {
+  background-color: var(--accent-txt-cl);
+}
+
+.social-link:hover .social-current {
+  fill: var(--white-txt-cl);
+}
+.social-current {
+  fill: var(--icons-cl);
+}
+
+
+}
 /*Footer*/
 
 .footer {
@@ -333,7 +369,8 @@ img {
   color: rgba(255, 255, 255, 0.6);
 }
 
-.adress-list {}
+.adress-list {
+}
 
 .adress-item:not(:last-child) {
   margin-bottom: 9px;
@@ -385,7 +422,8 @@ img {
   color: #ffffff;
 }
 
-.project-btn-txt {}
+.project-btn-txt {
+}
 
 /*Portfolio*/
 
@@ -399,19 +437,18 @@ img {
   flex-basis: calc((100% - 60px) / 3);
 }
 
-.portfolio-link {}
+.portfolio-link {
+}
 
 .portfolio-img {
   width: 100%;
-
 }
 
 .portfolio-border {
-  border: 1px solid #EEEEEE;
+  border: 1px solid #eeeeee;
   border-top: none;
   padding-top: 20px;
   padding-bottom: 20px;
-
 }
 
 .portfolio-title {
@@ -422,7 +459,6 @@ img {
   color: var(--black-txt-cl);
   padding-left: 24px;
   padding-bottom: 4px;
-
 }
 
 .portfolio-article {
@@ -431,5 +467,4 @@ img {
   letter-spacing: 0.03em;
   color: var(--main-txt-cl);
   padding-left: 24px;
-
 }
