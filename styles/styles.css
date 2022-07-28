@@ -83,7 +83,7 @@ img {
 .card-set {
   display: flex;
   flex-wrap: wrap;
-  gap:var(--gap)
+  gap: var(--gap);
 }
 
 .card-item {
@@ -130,7 +130,6 @@ img {
   flex-wrap: wrap;
   gap: 50px;
 }
-
 
 .nav-item {
   color: var(--black-txt-cl);
@@ -227,12 +226,10 @@ img {
 }
 
 .advantades-item {
-
 }
 .card-item {
   flex-basis: calc((100% - (var(--item) - 1) * var(--gap)) / var(--item));
 }
-
 
 .advantades-title {
   font-weight: 700;
@@ -266,7 +263,6 @@ img {
 }
 
 .work-item {
-  
 }
 
 .work-item {
@@ -286,7 +282,6 @@ img {
 
 .command-list {
 }
-
 
 .command-list-item {
   background-color: var(--white-bg-cl);
@@ -354,8 +349,6 @@ img {
   fill: var(--icons-cl);
 }
 
-
-}
 /*Footer*/
 
 .footer {
@@ -363,12 +356,10 @@ img {
   padding-top: 60px;
   padding-bottom: 60px;
 }
-
 .footer .logo-link {
   display: block;
   margin-bottom: 20px;
 }
-
 .logo-white {
   color: var(--white-txt-cl);
 }
@@ -388,9 +379,8 @@ img {
 .adress-link {
   color: inherit;
 }
-
 .adress-link[target='_blank'] {
-  color: #ffffff;
+  color: var(--white-txt-cl);
 }
 
 /*PORTFOLIO*/
@@ -446,7 +436,7 @@ img {
 /*Portfolio*/
 
 .portfolio-list {
- --item:3;
+  --item: 3;
 }
 
 .portfolio-item {
