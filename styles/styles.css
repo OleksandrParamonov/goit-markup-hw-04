@@ -15,6 +15,7 @@
   --main-bg-btn-cl: #2196f3;
   --bg-btn-cl: #188ce8;
   --white-bg-cl: #ffffff;
+  --footer-icons-bg-cl: rgba(255, 255, 255, 0.1);
 
   /*Others*/
   --gap: 30px;
@@ -167,7 +168,15 @@ img {
   margin-left: 50px;
 }
 
-.contact-item {
+.contact-icons {
+  fill: #757575;
+  margin-right: 10px;
+}
+.contact-icons:hover .contact-icons:focus {
+  fill: var(--main-bg-btn-cl);
+}
+.contact-link:hover .contact-icons {
+  fill: var(--main-bg-btn-cl);
 }
 
 .contact-link {
@@ -176,8 +185,10 @@ img {
 
 /*Main content*/
 
+/*HERO*/
+
 .hero {
-  background-image: url(/images/hero-bg/hero-bg-img.jpg);
+  background-image: url(/images/hero-bg/hero-bg-gray.png), url(/images/hero-bg/hero-bg-img.jpg);
   text-align: center;
   padding: 200px 0;
   max-width: 1600px;
@@ -220,13 +231,23 @@ img {
   color: #ffffff;
 }
 
-/*Преимущества*/
+/*Advantades*/
 
 .advantades {
 }
 
 .advantades-item {
 }
+
+.adventages-icons {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  height: 120px;
+  margin-bottom: 30px;
+  background-color: var(--grey-bg-cl);
+}
+
 .card-item {
   flex-basis: calc((100% - (var(--item) - 1) * var(--gap)) / var(--item));
 }
@@ -243,7 +264,7 @@ img {
 .advantades-article {
 }
 
-/*Чем занимается*/
+/*Work*/
 
 .work {
   padding-top: 0;
@@ -320,10 +341,7 @@ img {
 }
 
 .social-list {
-  display: flex;
-  flex-wrap: wrap;
-  gap: 10px;
-  justify-content: center;
+  --gap: 10px;
 }
 .social-item {
 }
@@ -339,7 +357,7 @@ img {
 }
 .social-link:hover,
 .social-link:focus {
-  background-color: var(--accent-txt-cl);
+  background-color: var(--main-bg-btn-cl);
 }
 
 .social-link:hover .social-current {
@@ -349,12 +367,57 @@ img {
   fill: var(--icons-cl);
 }
 
+/*CUSTOMERS*/
+.customers {
+}
+
+.customers-title {
+  font-weight: 700;
+  font-size: 36px;
+  line-height: 42px;
+  text-align: center;
+  letter-spacing: 0.03em;
+  color: var(--black-txt-cl);
+  margin-bottom: 50px;
+}
+
+.customers-list {
+  --item: 6;
+}
+
+.customers-item {
+}
+.customers-link {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  width: 170px;
+  height: 92px;
+  border: 1px solid #afb1b8;
+  border-radius: 4px;
+  padding: 16px 32px;
+}
+.customers-link:hover,
+.customers-link:focus {
+  border-color: var(--main-bg-btn-cl);
+}
+.customers-icon {
+  fill: var(--icons-cl);
+}
+
+.customers-link:hover .customers-icon {
+  fill: var(--main-bg-btn-cl);
+}
 /*Footer*/
 
 .footer {
   background-color: var(--dark-bg-cl);
   padding-top: 60px;
   padding-bottom: 60px;
+}
+.footer .card-set {
+  --gap: 70px;
+  --item: 2;
 }
 .footer .logo-link {
   display: block;
@@ -383,6 +446,46 @@ img {
   color: var(--white-txt-cl);
 }
 
+/*Join-in*/
+
+.join-container {
+  margin: 0;
+  padding: 0;
+}
+.join-title {
+  font-weight: 700;
+  font-size: 14px;
+  line-height: 16px;
+  letter-spacing: 0.03em;
+  text-transform: uppercase;
+  color: var(--white-txt-cl);
+  margin-bottom: 20px;
+  padding-top: 12px;
+}
+.card-set .join-list {
+  --gap: 10px;
+  --item: 4;
+}
+
+.join-item {
+}
+.join-link {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  width: 44px;
+  height: 44px;
+  background-color: var(--footer-icons-bg-cl);
+  border-radius: 50%;
+}
+
+.join-link:hover,
+.join-link:focus {
+  background-color: var(--main-bg-btn-cl);
+}
+.join-icons {
+  fill: var(--white-txt-cl);
+}
 /*PORTFOLIO*/
 
 /*Projekts*/

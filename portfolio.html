@@ -16,31 +16,38 @@
 
   <body>
     <!--Шапка портфолио-->
-    <header class="header dorder-header">
+    <header class="header">
       <div class="container main-nav">
         <nav class="header-nav">
           <a class="logo-link link" href="/">Web<span class="logo-black">Studio</span></a>
           <ul class="nav-list list">
             <li class="nav-item">
-              <a class="nav-link hover-link link" href="index.html">Студія</a>
+              <a class="nav-link hover-link link current" href="index.html">Студія</a>
             </li>
             <li class="nav-item">
-              <a class="nav-link hover-link link current" href="portfolio.html">Портфоліо</a>
+              <a class="nav-link hover-link link" href="portfolio.html">Портфоліо</a>
             </li>
             <li class="nav-item">
               <a class="nav-link hover-link link" href="./">Контакти</a>
             </li>
           </ul>
         </nav>
+        <!--Contacts-->
 
         <ul class="contact-list list">
           <li class="contact-item">
             <a class="contact-link hover-link link" href="mailto:info@devstudio.com"
+              ><svg class="contact-icons" width="16px" height="12px">
+                <use href="./images/icons.svg#mail"></use></svg
               >info@devstudio.com</a
             >
           </li>
           <li class="contact-item">
-            <a class="contact-link hover-link link" href="tel:+380961111111">+38 096 111 11 11</a>
+            <a class="contact-link hover-link link" href="tel:+380961111111"
+              ><svg class="contact-icons" width="10px" height="16px">
+                <use href="./images/icons.svg#phone"></use></svg
+              >+38 096 111 11 11</a
+            >
           </li>
         </ul>
       </div>
@@ -220,29 +227,67 @@
         </div>
       </section>
     </main>
-    <!--Підвал-->
+
+    <!--Footer-->
+
     <footer class="footer">
-      <div class="container">
-        <a class="logo-link link" href="/"> Web<span class="logo-white">Studio</span></a>
-        <address class="footer-adress">
-          <ul class="adress-list list">
-            <li class="adress-item">
-              <a
-                class="adress-link link"
-                href="https://goo.gl/maps/TSJkPxfqwCvXyevN7"
-                rel="noreferrer noopener"
-                target="_blank"
-                >м. Київ, пр-т Лесі Українки, 26</a
-              >
+      <div class="container card-set">
+        <div class="footer-container">
+          <a class="logo-link link" href="/"> Web<span class="logo-white">Studio</span></a>
+          <address class="footer-adress">
+            <ul class="adress-list list">
+              <li class="adress-item">
+                <a
+                  class="adress-link link"
+                  href="https://goo.gl/maps/TSJkPxfqwCvXyevN7"
+                  rel="noreferrer noopener"
+                  target="_blank"
+                  >м. Київ, пр-т Лесі Українки, 26</a
+                >
+              </li>
+              <li class="adress-item">
+                <a class="adress-link link" href="mailto:info@example.com">info@example.com</a>
+              </li>
+              <li class="adress-item">
+                <a class="adress-link link" href="tel:+380991111111">+38 099 111 11 11</a>
+              </li>
+            </ul>
+          </address>
+        </div>
+        <!--Join-in-->
+        <div class="join-container">
+          <h2 class="join-title">приєднуйтесь</h2>
+          <ul class="join-list card-set">
+            <li class="join-item card-item">
+              <a href="" class="join-link">
+                <svg class="join-icons" width="20px" height="20px">
+                  <use href="./images/icons.svg#instagram"></use>
+                </svg>
+              </a>
             </li>
-            <li class="adress-item">
-              <a class="adress-link link" href="mailto:info@example.com">info@example.com</a>
+            <li class="join-item card-item">
+              <a href="" class="join-link">
+                <svg class="join-icons" width="20px" height="20px">
+                  <use href="./images/icons.svg#twitter"></use>
+                </svg>
+              </a>
             </li>
-            <li class="adress-item">
-              <a class="adress-link link" href="tel:+380991111111">+38 099 111 11 11</a>
+            <li class="join-item card-item">
+              <a href="" class="join-link">
+                <svg class="join-icons" width="20px" height="20px">
+                  <use href="./images/icons.svg#facebook"></use>
+                </svg>
+              </a>
+            </li>
+            <li class="join-item card-item">
+              <a href="" class="join-link">
+                <svg class="join-icons" width="20px" height="20px">
+                  <use href="./images/icons.svg#linkedin"></use>
+                </svg>
+              </a>
             </li>
           </ul>
-        </address>
+        </div>
       </div>
     </footer>
   </body>
