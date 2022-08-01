@@ -68,6 +68,19 @@ img {
   list-style: none;
 }
 
+.visually-hidden {
+  position: absolute;
+  width: 1px;
+  height: 1px;
+  margin: -1px;
+  border: 0;
+  padding: 0;
+  white-space: nowrap;
+  clip-path: inset(100%);
+  clip: rect(0 0 0 0);
+  overflow: hidden;
+}
+
 .container {
   width: 1200px;
   padding-left: 15px;
@@ -169,13 +182,16 @@ img {
 }
 
 .contact-icons {
-  fill: #757575;
+  fill: var(--main-txt-cl);
   margin-right: 10px;
 }
-.contact-icons:hover .contact-icons:focus {
+.contact-icons:hover {
   fill: var(--main-bg-btn-cl);
 }
 .contact-link:hover .contact-icons {
+  fill: var(--main-bg-btn-cl);
+}
+.contact-link:focus .contact-icons {
   fill: var(--main-bg-btn-cl);
 }
 
@@ -188,7 +204,8 @@ img {
 /*HERO*/
 
 .hero {
-  background-image: url(/images/hero-bg/hero-bg-gray.png), url(/images/hero-bg/hero-bg-img.jpg);
+  background-image: linear-gradient(to right, rgba(47, 48, 58, 0.4), rgba(47, 48, 58, 0.4)),
+    url(../images/hero-bg/hero-bg-img.jpg);
   text-align: center;
   padding: 200px 0;
   max-width: 1600px;
@@ -355,12 +372,21 @@ img {
   background-color: var(--white-bg-cl);
   border-radius: 50%;
 }
+.footer .social-link {
+  background-color: var(--footer-icons-bg-cl);
+}
+.footer .social-current {
+  fill: var(--white-txt-cl);
+}
 .social-link:hover,
 .social-link:focus {
   background-color: var(--main-bg-btn-cl);
 }
 
 .social-link:hover .social-current {
+  fill: var(--white-txt-cl);
+}
+.social-link:focus .social-current {
   fill: var(--white-txt-cl);
 }
 .social-current {
@@ -408,17 +434,18 @@ img {
 .customers-link:hover .customers-icon {
   fill: var(--main-bg-btn-cl);
 }
+.customers-link:focus .customers-icon {
+  fill: var(--main-bg-btn-cl);
+}
 /*Footer*/
 
 .footer {
+  --gap: 70px;
   background-color: var(--dark-bg-cl);
   padding-top: 60px;
   padding-bottom: 60px;
 }
-.footer .card-set {
-  --gap: 70px;
-  --item: 2;
-}
+
 .footer .logo-link {
   display: block;
   margin-bottom: 20px;
@@ -462,49 +489,13 @@ img {
   margin-bottom: 20px;
   padding-top: 12px;
 }
-.card-set .join-list {
-  --gap: 10px;
-  --item: 4;
-}
 
-.join-item {
-}
-.join-link {
-  display: flex;
-  align-items: center;
-  justify-content: center;
-  width: 44px;
-  height: 44px;
-  background-color: var(--footer-icons-bg-cl);
-  border-radius: 50%;
-}
-
-.join-link:hover,
-.join-link:focus {
-  background-color: var(--main-bg-btn-cl);
-}
-.join-icons {
-  fill: var(--white-txt-cl);
-}
 /*PORTFOLIO*/
 
 /*Projekts*/
 
 .projects {
   padding-top: 56px;
-}
-
-.visually-hidden {
-  position: absolute;
-  width: 1px;
-  height: 1px;
-  margin: -1px;
-  border: 0;
-  padding: 0;
-  white-space: nowrap;
-  clip-path: inset(100%);
-  clip: rect(0 0 0 0);
-  overflow: hidden;
 }
 
 .projects-list {
@@ -528,7 +519,8 @@ img {
   padding: 6px 22px;
 }
 
-.projects-btn:hover {
+.projects-btn:hover,
+.projects-btn:focus {
   background: var(--main-bg-btn-cl);
   color: var(--white-txt-cl);
 }
@@ -544,8 +536,15 @@ img {
 
 .portfolio-item {
 }
-
 .portfolio-link {
+  display: block;
+}
+.portfolio-link:hover,
+.portfolio-link:focus {
+  display: block;
+  border: 1px solid #eeeeee;
+  box-shadow: 0px 1px 1px rgba(0, 0, 0, 0.12), 0px 4px 4px rgba(0, 0, 0, 0.06),
+    1px 4px 6px rgba(0, 0, 0, 0.16);
 }
 
 .portfolio-img {
